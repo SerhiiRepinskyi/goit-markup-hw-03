@@ -1,0 +1,239 @@
+/* Домінатний колір основного тексту #757575 */
+/* Вторинний колір заголовків #212121 */
+
+/* Основний фон білий #ffffff */
+
+/* Акцент #2196f3 */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* -----SITE-HEADER (logo, site-nav, site-contacts)----- */
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+}
+
+.logo .header-logo {
+  color: #000000;
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* -----HERO----- */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* -----BUTTONS----- */
+.button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 4px;
+}
+
+.button.btn-primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  padding: 10px 32px;
+}
+
+.button.btn-primary:hover,
+.button.btn-primary:focus {
+  background-color: #188ce8;
+}
+
+.button.btn-secondary {
+  padding: 6px 22px;
+}
+
+.button.btn-all {
+  padding: 6px 25px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* -----SECTIONS----- */
+.section-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.feature-list .title {
+  color: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* -----FOOTER----- */
+.footer {
+  background-color: #2f303a;
+}
+
+.logo .footer-logo {
+  color: var(--primary-white-color);
+}
+
+.footer-contacts .link-address {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+}
+
+.footer-contacts .link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+}
+
+.footer-contacts .link-address:hover,
+.footer-contacts .link-address:focus {
+  color: var(--accent-color);
+}
+
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* -----PORTFOLIO----- */
+.portfolio-list .link {
+  text-decoration: none;
+}
+
+.portfolio-list .title {
+  color: var(--title-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
